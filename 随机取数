@@ -7,7 +7,7 @@ def ran():
     m = int(input("请输入你要得到的数字个数:"))
     n = int(input("请输入你需要的数字的上限:"))
     if 1 <= int(m) <= int(n):
-        a = random.sample(range(1,n),m)
+        a = random.sample(range(1,n+1),m)
         print a
         
     else:
