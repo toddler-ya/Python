@@ -1,0 +1,19 @@
+#-*- coding: cp936 -*-
+import random
+
+print "从1~n中，随机取m个数。n1<=m<=n"
+
+def ran():
+    m = int(input("请输入你要得到的数字个数:"))
+    n = int(input("请输入你需要的数字的上限:"))
+    if 1 <= int(m) <= int(n):
+        a = random.sample(range(1,n),m)
+        print a
+        
+    else:
+        print("~"*25)
+        print("请确定 1<= m <= n?")
+        print("~"*25)
+        ran()
+ran()
+    
